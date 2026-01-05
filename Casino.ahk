@@ -15,7 +15,7 @@ global stop := false
 global MoveBack := -Move1 - Move2 - Move3 - Move4
 
 ; F1 hotkey starts the sequence
-F1:: {
+h:: {
     global stop
 
     ; Move into a position where you can hit all slots
@@ -59,7 +59,7 @@ F1:: {
 }
 
 ; F4 hotkey stops the loop without exiting the script
-F4:: {
+j:: {
     global stop 
     stop := true
 }
@@ -79,4 +79,5 @@ pressE() {
 }
 
 ; F5 hotkey to exit the script
-F5::ExitApp
+
+k::ExitApp
